@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(192, 240, 256);
+}
+
+h1 {
+  border: 2px solid lightgrey;
+  padding: 8px;
+  border-radius: 8px;
+  background: white;
+  margin: 8px;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.question {
+  background: white;
+  border: 2px solid lightgrey;
+  border-radius: 8px;
+  width: 200px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.answer {
+  background-color: rgb(256, 256, 240);
+  border: 2px solid lightgrey;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.answer.correct {
+  border-color: rgb(64, 192, 64);
+  background-color: rgb(192, 256, 192);
+}
+
+.answer.incorrect {
+  border-color: rgb(192, 64, 64);
+  background-color: rgb(256, 192, 192);
+}
